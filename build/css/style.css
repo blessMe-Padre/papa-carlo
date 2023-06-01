@@ -1854,7 +1854,7 @@ button,
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/svg/icons-check.svg") no-repeat center;
+  background: url("../img/svg/icons-check.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -1885,7 +1885,7 @@ button,
 
 .services__wrapper {
   position: relative;
-  background: url("../../img/bg-1.jpg") no-repeat fixed 100%/cover;
+  background: url("../img/bg-1.jpg") no-repeat fixed 100%/cover;
   padding: 50px 0;
 }
 
