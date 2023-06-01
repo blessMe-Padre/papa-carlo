@@ -1,7 +1,7 @@
 .header {
   position: relative;
   background: $color-quartz;
-  min-height: 50px;
+  min-height: 60px;
   left: 0;
   width: 100%;
   top: 0;
@@ -50,4 +50,12 @@
   width: 100vw;
   background: rgba(0, 0, 0, .5);
   z-index: 1;
+}
+
+.header__phone {
+  color: $color-default-white;
+}
+
+.icon-phone {
+  margin-right: 10px;
 }

@@ -3,6 +3,7 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper";
+@import "vendor/fontello";
 
 // Global
 // ---------------------------------
@@ -24,3 +25,8 @@
 @import "blocks/toggle-btn";
 @import "blocks/footer";
 // ---------------------------------
+
+// Sections
+// ----------------------------------
+@import "blocks/hero";
+// ----------------------------------
