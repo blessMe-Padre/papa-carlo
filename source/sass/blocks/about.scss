@@ -1,0 +1,66 @@
+.about {
+    padding: 70px 0;
+}
+
+.about__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    gap: 30px;
+
+    @include vp-767 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about__title {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.about__text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about__text li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+
+    @include vp-767 {
+        font-size: 16px;
+    }
+}
+
+.about__text li::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: url('../../img/svg/icons-check.svg') no-repeat center;
+    background-size: contain;
+}
+
+.about__img {
+    width: 250px;
+    height: 250px;
+
+    @include vp-767 {
+        grid-row: 1/2;
+    }
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}

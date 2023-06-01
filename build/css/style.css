@@ -1782,11 +1782,6 @@ button,
   padding: 50px 25px 0 25px;
 }
 
-.hero__img {
-  width: 500px;
-  height: 500px;
-}
-
 .hero__img img {
   width: 100%;
   height: 100%;
@@ -1816,6 +1811,119 @@ button,
   font-weight: 600;
   color: rgba(250, 0, 0, 0.6);
   margin: 10px 0;
+}
+
+.about {
+  padding: 70px 0;
+}
+
+.about__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  gap: 30px;
+}
+
+.about__title {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.about__text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__text li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.about__text li::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../../img/svg/icons-check.svg") no-repeat center;
+  background-size: contain;
+}
+
+.about__img {
+  width: 250px;
+  height: 250px;
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.services {
+  padding: 70px 0;
+}
+
+.services__title {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.services__wrapper {
+  position: relative;
+  background: url("../../img/bg-1.jpg") no-repeat fixed 100%/cover;
+  padding: 50px 0;
+}
+
+.services__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 25, 34, 0.7);
+}
+
+.services__list {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.services__item {
+  padding: 20px;
+  border: 2px solid #c6c6c6;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.services__cost {
+  color: #DE3163;
+  text-align: right;
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -1903,6 +2011,26 @@ button,
 
   .hero p {
     font-size: 16px;
+  }
+
+  .about__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .about__text li {
+    font-size: 16px;
+  }
+
+  .about__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
+  .services__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
