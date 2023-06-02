@@ -24,9 +24,6 @@
 }
 
 .hero__img {
-    // width: 500px;
-    // height: 500px;
-
     @include vp-767 {
         width: 100%;
         height: 100%;
@@ -66,8 +63,8 @@
 
 .hero span {
     display: block;
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 600;
     color: $color-red;
-    margin: 10px 0;
+    margin: 15px 0;
 }
