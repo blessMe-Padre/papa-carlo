@@ -1,1 +1,37 @@
-.footer {}
+.footer {
+    padding: 30px 0;
+    background-color: $color-quartz;
+    color: $color-default-white;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.footer__item p {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    line-height: 1.1;
+    max-width: 500px;
+}
+
+.footer__socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__socials li {
+    margin-bottom: 15px;
+}
+
+.footer__socials a {
+    color: $color-default-white;
+    font-size: 18px;
+}
+
+.icon-whatsapp {
+    margin-right: 10px;
+}
