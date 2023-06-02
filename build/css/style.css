@@ -1804,6 +1804,24 @@ button,
   margin-right: 10px;
 }
 
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: rgba(250, 0, 0, 0.6);
+  border: 2px solid #bf3f3f;
+  border-radius: 100%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20%;
+  right: 30px;
+  display: none;
+}
+
+.scroll-top.is-active {
+  display: block;
+}
+
 .hero {
   padding: 70px 0 0 0;
   color: #292929;
